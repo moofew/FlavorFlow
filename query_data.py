@@ -6,14 +6,19 @@ import argparse
 
 CHROMA_PATH = "chroma"
 PROMPT_TEMPLATE = """
-Answer the question based only on the following context:
+You are a helpful assistant that provides detailed, structured, and complete responses.
+
+Use ONLY the following context to answer the question.
 
 {context}
 
 ---
 
-Answer the question based on the above context: {question}
+Please provide a detailed answer including exact ingredient amounts and step-by-step instructions.
+
+Question: {question}
 """
+
 
 def main():
     parser = argparse.ArgumentParser()
